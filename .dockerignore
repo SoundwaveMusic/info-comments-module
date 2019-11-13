@@ -1,0 +1,14 @@
+*/node_modules
+*/package-lock.json
+*/commentDataOutput.txt
+*/commentDataOutput.txt.zip
+*/songDataOutput.csv
+*/newrelic.js
+*/db
+*/client
+*/.vscode
+*/.gitignore
+*/newrelic_agent.log
+*/newrelic.js
+*/script.js
+*/webpack.config.js

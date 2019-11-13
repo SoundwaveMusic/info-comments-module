@@ -5,17 +5,19 @@ var songSchema = mongoose.Schema({
     type: Number,
     unique: true
   },
-  name: String,
+  name: {
+    type: String,
+    unique: true
+  },
   streams: Number,
   likes: Number,
+  reposts: Number,
   userInteraction: {
-    username: String,
     userpicture: String,
     liked: Boolean,
     reposted: Boolean
   },
   tags: [String],
-  description: String,
   releasedBy: String,
   releaseDate: Date,
   pLine: String,
@@ -26,7 +28,6 @@ var songSchema = mongoose.Schema({
     name: String,
     followers: Number,
     tracks: Number,
-    pro: Boolean    
   },
   comments: [
       {

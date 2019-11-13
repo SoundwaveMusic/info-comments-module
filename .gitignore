@@ -1,1 +1,11 @@
 node_modules/
+package-lock.json
+commentDataOutput.txt
+commentDataOutput.txt.zip
+songDataOutput.csv
+newrelic.js
+script.json
+newrelic_agent.log
+inserttest.csv
+import_soundcloud_comments.*
+
