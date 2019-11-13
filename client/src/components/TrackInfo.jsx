@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles.css';
-const path = require('path');
+//const path = require('path');
 
-const TrackInfo = props => {
-    return(
+const TrackInfo = () => {
+    return (
 
         <div className='track-info'>
             <div className='tags-container'>

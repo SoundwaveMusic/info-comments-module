@@ -3,9 +3,7 @@ import './styles.css';
 const path = require('path');
 
 
-function Comments(props) {
-
-    console.log('comments', props.comments)
+function Comments() {
     return (
         <div className='comments-component'>
             <div className='flex-row'>
@@ -17,7 +15,7 @@ function Comments(props) {
 
             <div className='comment-container-asi'>
                 <div>
-                    <img className='comment-pic' src='http://localhost:4000/headshot.jpg'></img>
+                    <img className='comment-pic' src='/headshot.jpg'></img>
                 </div>
                 <div className='flex-comment-container-body'>
                     <div className='flex-comment-container-top-bar'>

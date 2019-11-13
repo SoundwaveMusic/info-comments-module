@@ -1,8 +1,10 @@
 const cassandra = require('cassandra-driver');
+var authProvider = new cassandra.auth.PlainTextAuthProvider('cassandra', 'EDITPASSWORD');
 const client = new cassandra.Client({
   contactPoints: ['PUBLICIP'],
   keyspace: 'soundcloud',
-  localDataCenter: "us-east-2"
+  localDataCenter: "us-east-2",
+  authProvider: authProvider,
 });
 
 const queryCREATE = `INSERT INTO soundcloud.comments(comment_id, song_id, timeInSongSeconds, timeCommentPosted, commentText, username, picture) VALUES (?, ?, ?, ?, ?, ?, ?)`;
