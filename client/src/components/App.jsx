@@ -74,7 +74,12 @@ class App extends React.Component {
             <div className='comments-component'>
                 <Commentbar />
                 <div className='flex-lower'>
-                    <ArtistInfo />
+                    <ArtistInfo
+                        pic={this.state.artistPicture}
+                        name={this.state.artistName}
+                        followers={this.state.followers}
+                        tracks={this.state.tracks}
+                    />
                     <div className='flex-lower-right'>
                         <TrackInfo />
                         <Comments comments={this.state.comments} />
